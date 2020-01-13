@@ -8,6 +8,10 @@ cd Sourcetrail
 
 git checkout $1
 
+cd bin/test/data/UtilityGradleTestSuite/simple_gradle_project
+
+gradlew build
+
 ./script/buildonly.sh all
 
 ./script/buildonly.sh package
