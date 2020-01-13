@@ -27,7 +27,7 @@ TEST_CASE("gradle wrapper detects source directories of simple projects")
 	}
 	catch (std::exception e)
 	{
-		std::cout << "exception: " << e.what << std::endl;
+		std::cout << "exception: " << e.what() << std::endl;
 	}
 	catch (...)
 	{
