@@ -3,12 +3,12 @@
 #include "language_packages.h"
 
 #if BUILD_JAVA_LANGUAGE_PACKAGE
-#	ifdef WIN32
+//#	ifdef WIN32
 
-#		include "FilePath.h"
-#		include "FileSystem.h"
-#		include "utility.h"
-#		include "utilityGradle.h"
+#	include "FilePath.h"
+#	include "FileSystem.h"
+#	include "utility.h"
+#	include "utilityGradle.h"
 
 FilePath tmpFolder = FilePath(L"data/UtilityGradleTestSuite/tmp");
 
@@ -93,5 +93,5 @@ TEST_CASE("gradle wrapper detects source and test dependencies of simple project
 	cleanup();
 }
 
-#	endif	  // WIN32
-#endif		  // BUILD_JAVA_LANGUAGE_PACKAGE
+//#	endif	  // WIN32
+#endif	  // BUILD_JAVA_LANGUAGE_PACKAGE
